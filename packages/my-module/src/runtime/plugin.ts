@@ -6,7 +6,6 @@ export default defineNuxtPlugin(async () => {
 
   const config = useRuntimeConfig()
 
-  if (config)
-    // eslint-disable-next-line no-console
-    console.log(something)
+  // eslint-disable-next-line no-console
+  if (config) console.log(something)
 })

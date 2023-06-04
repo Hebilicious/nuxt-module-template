@@ -1,7 +1,12 @@
 {
   "name": "my-module",
   "type": "module",
-  "version": "0.1.0-beta.4",
+  "version": "0.0.1",
+  "author": {
+    "name": "Hebilicious",
+    "email": "xsh4k3@gmail.com",
+    "url": "https://twitter.com/its_hebilicious"
+  },
   "license": "MIT",
   "repository": "Hebilicious/nuxt-module-template",
   "exports": {
@@ -21,8 +26,11 @@
     "*.mjs"
   ],
   "scripts": {
-    "build": "pnpm build:module && esno scripts/prepare.ts",
+    "dts": "esno scripts/dts.ts",
+    "readme": "esno scripts/readme.ts",
+    "postbuild": "pnpm dts && pnpm readme",
     "build:module": "nuxt-build-module",
+    "build": "rimraf dist && pnpm build:module && pnpm postbuild",
     "dev": "nuxi dev"
   },
   "peerDependencies": {
