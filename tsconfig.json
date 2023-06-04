@@ -21,6 +21,7 @@
     "**/dist",
     "**/playground",
     "**/playgrounds",
-    "**/docs"
+    "**/docs",
+    "**/test/fixtures/**"
   ]
 }
