@@ -1,5 +1,5 @@
 {
-  "name": "my-module",
+  "name": "@hebilicious/my-module",
   "type": "module",
   "version": "0.0.1",
   "author": {
@@ -12,12 +12,20 @@
   "exports": {
     ".": {
       "types": "./dist/module.d.ts",
-      "require": "./dist/module.cjs",
-      "import": "./dist/module.mjs"
+      "require": {
+        "default": "./dist/module.cjs",
+        "types": "./dist/module.d.cts"
+      },
+      "import": {
+        "default": "./dist/module.mjs",
+        "types": "./dist/module.d.mts"
+      },
+      "default": "./dist/module.mjs"
     },
     "./*": "./*"
   },
   "main": "./dist/module.cjs",
+  "module": "./dist/module.mjs",
   "types": "./dist/types.d.ts",
   "files": [
     "dist",
