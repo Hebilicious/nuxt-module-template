@@ -13,9 +13,10 @@ It comes with a base module that you can use to start your own module.
 
 - 📦 PNPM monorepo
 - 🏗️ Nuxt Module with `nuxt-build-module` and `unbuild`
-- 📝 Docs with docus
+- 🏗 ESM/CJS valid package, with MTS and CTS declaration files.
+- 📝 Docs with vitepress
 - ✅ Tests with vitest
-- 🔨 Monorepo tasks with NX
+- 🔨 Monorepo tasks with Turbo
 - 🔄 CI with Github Actions
 - 🚀 Trigger NPM release + changelog from CLI
 - 📏 Conventional commits
