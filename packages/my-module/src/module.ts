@@ -3,6 +3,12 @@ import { defu } from "defu"
 
 const NAME = "my-module"
 
+declare module "@nuxt/schema" {
+  interface PublicRuntimeConfig {
+    [NAME]: Record<string, unknown>
+  }
+}
+
 export default defineNuxtModule({
   meta: {
     name: NAME,
