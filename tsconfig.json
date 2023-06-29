@@ -1,19 +1,10 @@
 {
+  "extends": "./packages/my-module/.nuxt/tsconfig.json",
   "compilerOptions": {
-    "rootDir": ".",
     "baseUrl": ".",
-    "strict": true,
-    "module": "esnext",
-    "lib": ["esnext", "dom"],
-    "target": "esnext",
-    "moduleResolution": "node",
-    "noUnusedLocals": true,
-    "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
     "paths": {
-      "#imports": ["packages/my-module/node_modules/nuxt/app.d.ts"],
-      "#app": ["packages/my-module/node_modules/nuxt/dist/app"]
+      "#imports": ["./packages/my-module/node_modules/nuxt/app.d.ts"],
+      "#app": ["./packages/my-module/node_modules/nuxt/dist/app"]
     }
   },
   "exclude": [

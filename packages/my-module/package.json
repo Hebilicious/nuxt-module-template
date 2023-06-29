@@ -39,6 +39,7 @@
     "postbuild": "pnpm dts && pnpm readme",
     "build:module": "nuxt-build-module",
     "build": "rimraf dist && pnpm build:module && pnpm postbuild",
+    "postinstall": "nuxi prepare",
     "dev": "nuxi dev"
   },
   "peerDependencies": {
@@ -46,11 +47,11 @@
     "vite": "*"
   },
   "dependencies": {
-    "@nuxt/kit": "3.5.3",
+    "@nuxt/kit": "3.6.1",
     "defu": "^6.1.2"
   },
   "devDependencies": {
     "@nuxt/module-builder": "^0.4.0",
-    "h3": "^1.6.6"
+    "h3": "^1.7.1"
   }
 }
