@@ -46,7 +46,7 @@
     "vite": "*"
   },
   "dependencies": {
-    "@nuxt/kit": "3.6.1",
+    "@nuxt/kit": "3.6.5",
     "defu": "^6.1.2"
   },
   "devDependencies": {
