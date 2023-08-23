@@ -36,8 +36,8 @@ importers:
         specifier: ^3.3.1
         version: 3.3.1
       lint-staged:
-        specifier: ^13.3.0
-        version: 13.3.0
+        specifier: ^14.0.1
+        version: 14.0.1
       pnpm:
         specifier: 8.6.12
         version: 8.6.12
@@ -6157,8 +6157,8 @@ packages:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
     dev: true
 
-  /lint-staged@13.3.0:
-    resolution: {integrity: sha512-mPRtrYnipYYv1FEE134ufbWpeggNTo+O/UPzngoaKzbzHAthvR55am+8GfHTnqNRQVRRrYQLGW9ZyUoD7DsBHQ==}
+  /lint-staged@14.0.1:
+    resolution: {integrity: sha512-Mw0cL6HXnHN1ag0mN/Dg4g6sr8uf8sn98w2Oc1ECtFto9tvRF7nkXGJRbx8gPlHyoR0pLyBr2lQHbWwmUHe1Sw==}
     engines: {node: ^16.14.0 || >=18.0.0}
     hasBin: true
     dependencies:
@@ -9449,7 +9449,7 @@ packages:
       scule: 1.0.0
       unplugin: 1.4.0
       vue-router: 4.2.2(vue@3.3.4)
-      yaml: 2.2.2
+      yaml: 2.3.1
     transitivePeerDependencies:
       - rollup
       - vue
@@ -10295,11 +10295,6 @@ packages:
       lodash: 4.17.21
       yaml: 2.3.1
     dev: true
-
-  /yaml@2.2.2:
-    resolution: {integrity: sha512-CBKFWExMn46Foo4cldiChEzn7S7SRV+wqiluAb6xmueD/fGyRHIhX8m14vVGgeFWjN540nKCNVj6P21eQjgTuA==}
-    engines: {node: '>= 14'}
-    dev: false
 
   /yaml@2.3.1:
     resolution: {integrity: sha512-2eHWfjaoXgTBC2jNM1LRef62VQa0umtvRiDSk6HSzW7RvS5YtkabJrwYLLEKWBc8a5U2PTSCs+dJjUTJdlHsWQ==}
