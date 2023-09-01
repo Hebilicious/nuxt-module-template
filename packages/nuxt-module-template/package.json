@@ -34,6 +34,7 @@
   ],
   "scripts": {
     "readme": "bun scripts/readme.ts",
+    "prebuild": "bun postinstall",
     "postinstall": "nuxi prepare",
     "postbuild": "bun readme",
     "build:stub": "nuxt-build-module --stub",
