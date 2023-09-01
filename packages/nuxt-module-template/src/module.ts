@@ -1,15 +1,11 @@
 import { addImports, addPlugin, addTemplate, createResolver, defineNuxtModule, useLogger } from "@nuxt/kit"
 import { defu } from "defu"
 
-const NAME = "my-module"
+const NAME = "my-module" as const
 
-declare module "@nuxt/schema" {
-  interface PublicRuntimeConfig {
-    [NAME]: Record<string, unknown>
-  }
-}
+export type ModuleOptions = Record<string, unknown>
 
-export default defineNuxtModule({
+export default defineNuxtModule<ModuleOptions>({
   meta: {
     name: NAME,
     configKey: NAME
@@ -19,7 +15,6 @@ export default defineNuxtModule({
     const { resolve } = createResolver(import.meta.url)
 
     logger.info(`Adding ${NAME} module...`, userOptions)
-
     // 1. Set up runtime configuration
     const options = defu(nuxt.options.runtimeConfig.public[NAME], userOptions, {})
     nuxt.options.runtimeConfig.public[NAME] = options
