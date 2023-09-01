@@ -1,5 +1,5 @@
 {
-  "name": "@hebilicious/my-module_playground",
+  "name": "@hebilicious/nuxt-module-template_playground",
   "private": true,
   "scripts": {
     "build": "NITRO_PRESET=cloudflare_pages nuxt build",
@@ -8,7 +8,7 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^0.8.0",
-    "nuxt": "latest"
+    "@nuxt/devtools": "^0.8.2",
+    "nuxt": "^3.7.0"
   }
 }
