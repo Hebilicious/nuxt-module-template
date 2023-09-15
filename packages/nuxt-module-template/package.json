@@ -43,16 +43,16 @@
     "dev": "nuxi dev"
   },
   "peerDependencies": {
-    "nuxt": "^3.7.1",
+    "nuxt": "^3.7.3",
     "vite": "*"
   },
   "dependencies": {
-    "@nuxt/kit": "3.7.1",
+    "@nuxt/kit": "3.7.3",
     "defu": "^6.1.2"
   },
   "devDependencies": {
     "@nuxt/module-builder": "^0.5.1",
     "h3": "^1.8.1",
-    "nuxt": "^3.7.1"
+    "nuxt": "^3.7.3"
   }
 }
