@@ -35,7 +35,7 @@
     "prettier": "^3.2.5",
     "rimraf": "^5.0.5",
     "simple-git-hooks": "^2.11.1",
-    "taze": "^0.13.4",
+    "taze": "^0.13.6",
     "typescript": "^5.4.5",
     "vitest": "^0.34.6"
   },
