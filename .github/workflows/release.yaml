@@ -17,7 +17,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: ./.github/workflows/actions/pnpm
+      - uses: ./.github/workflows/actions/install
   
       - run: bun x changelogithub
         continue-on-error: false

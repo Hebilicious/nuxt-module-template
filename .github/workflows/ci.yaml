@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
 
-      - uses: ./.github/workflows/actions/pnpm
+      - uses: ./.github/workflows/actions/install
 
       - name: Format
         run: bun run format
@@ -26,7 +26,7 @@ jobs:
     steps:
       - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
 
-      - uses: ./.github/workflows/actions/pnpm
+      - uses: ./.github/workflows/actions/install
 
       - name: Build
         run: bun run build
