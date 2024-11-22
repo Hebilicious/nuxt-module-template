@@ -1,7 +1,6 @@
 # ⚗️ Nuxt Module Template
 
-[![CI](https://github.com/Hebilicious/authjs-nuxt/actions/workflows/ci.yaml/badge.svg)](https://github.com/Hebilicious/authjs-nuxt/actions/workflows/ci.yaml)
-[![npm version](https://badge.fury.io/js/@hebilicious%2Fauthjs-nuxt.svg)](https://badge.fury.io/js/@hebilicious%2Fauthjs-nuxt)
+[![CI](https://github.com/Hebilicious/nuxt-module-template/actions/workflows/ci.yaml/badge.svg)](https://github.com/Hebilicious/nuxt-module-template/actions/workflows/ci.yaml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 🚀 Welcome to **Hebilicious Nuxt Module Starter Template**!
@@ -30,6 +29,10 @@ Use [pnpm](https://pnpm.io/installation#using-corepack) and [bun](https://bun.sh
 ```bash
 pnpm i
 ```
+
+## 🚀 Getting Started
+
+Do a search and replace for `@hebilicious/nuxt-module-template` and `nuxt-module-template` and replace with your scope and module name.
 
 ## 📦 Contributing
 

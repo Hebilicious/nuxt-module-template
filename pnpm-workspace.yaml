@@ -3,3 +3,4 @@ packages:
   - packages/**
   - playgrounds
   - test/fixtures/**
+  - docs
