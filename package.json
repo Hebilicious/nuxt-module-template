@@ -41,8 +41,6 @@
 		"pre-commit": "pnpx lint-staged"
 	},
 	"lint-staged": {
-		"*.{js,ts,tsx,vue,md}": [
-			"dprint fmt --verbose"
-		]
+		"*.{js,ts,tsx,vue,md}": ["dprint fmt --verbose"]
 	}
 }
