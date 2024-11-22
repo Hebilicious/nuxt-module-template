@@ -17,7 +17,7 @@ runs:
   using: composite
   steps:
     - name: Use Bun ${{ inputs.bun-version }} 
-      uses: oven-sh/setup-bun@v1
+      uses: oven-sh/setup-bun@v2
       with:
         bun-version: ${{ inputs.bun-version }} 
 
