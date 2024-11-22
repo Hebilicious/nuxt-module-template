@@ -24,8 +24,8 @@ runs:
 
     - name: Use Pnpm ${{ inputs.pnpm-version }} 
       uses: pnpm/action-setup@v3
-        with:
-          version: ${{ inputs.pnpm-version }} 
+      with:
+        version: ${{ inputs.pnpm-version }} 
 
     - name: Use Node.js ${{ inputs.node-version }}
       uses: actions/setup-node@v3
