@@ -1,0 +1,15 @@
+{
+    "folders": [
+      {
+        "path": "../package/nuxt-module-template",
+      },
+      {
+        "path": "..",
+      },
+    ],
+    "settings": {
+      "typescript.tsdk": "../node_modules/typescript/lib",
+      "typescript.enablePromptUseWorkspaceTsdk": true
+    },
+  }
+  

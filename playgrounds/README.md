@@ -1,6 +1,7 @@
 # AuthJS Nuxt
 
 This is a simple example to demonstrate how to use the module.
+
 ## Dependencies Caveats
 
 The dev dependencies are required for the build to work with pnpm.

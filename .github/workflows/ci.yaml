@@ -15,15 +15,10 @@ jobs:
     steps:
       - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
 
-      - uses: oven-sh/setup-bun@v1
-        with:
-          bun-version: latest
+      - uses: ./.github/workflows/actions/pnpm
 
-      - name: Install
-        run: bun install
-
-      - name: Lint
-        run: bun run lint
+      - name: Format
+        run: bun run format
 
   test:
     runs-on: ubuntu-latest
@@ -31,12 +26,7 @@ jobs:
     steps:
       - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
 
-      - uses: oven-sh/setup-bun@v1
-        with:
-          bun-version: latest
-
-      - name: Install
-        run: bun install
+      - uses: ./.github/workflows/actions/pnpm
 
       - name: Build
         run: bun run build

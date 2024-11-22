@@ -1,0 +1,13 @@
+{
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"linter": {
+		"rules": {
+			"correctness": {
+				"noUnusedImports": { "level": "warn", "fix": "safe" }
+			},
+			"style": {
+				"useConst": { "level": "warn", "fix": "safe" }
+			}
+		}
+	}
+}

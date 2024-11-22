@@ -1,9 +1,9 @@
 {
-  "prettier.enable": false,
-  "editor.formatOnSave": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "workbench.colorCustomizations": {},
-  "inline-bookmarks.view.showVisibleFilesOnly": false
+	"editor.defaultFormatter": "dprint.dprint",
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"quickfix.biome": "explicit",
+		"source.organizeImports.biome": "explicit"
+	},
+	"dprint.path": "./node_modules/.bin/dprint"
 }

@@ -18,5 +18,4 @@ features:
     details: Adapt Nuxt Module Template to fit your specific requirements with ease.
   - title: Extensible & Hackable 🔌
     details: Expand Nuxt Module Template's capabilities with custom integrations and modules.
-
 ---

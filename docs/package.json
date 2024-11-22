@@ -1,13 +1,13 @@
 {
-  "name": "@hebilicious/my-module_docs",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "dev": "vitepress dev",
-    "build": "vitepress build",
-    "preview": "vitepress preview"
-  },
-  "devDependencies": {
-    "vitepress": "1.1.3"
-  }
+	"name": "@hebilicious/my-module_docs",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "vitepress dev",
+		"build": "vitepress build",
+		"preview": "vitepress preview"
+	},
+	"devDependencies": {
+		"vitepress": "1.1.3"
+	}
 }

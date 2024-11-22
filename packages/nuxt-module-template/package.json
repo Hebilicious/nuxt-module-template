@@ -1,58 +1,54 @@
 {
-  "name": "@hebilicious/nuxt-module-template",
-  "type": "module",
-  "version": "0.0.0",
-  "author": {
-    "name": "Hebilicious",
-    "email": "xsh4k3@gmail.com",
-    "url": "https://twitter.com/its_hebilicious"
-  },
-  "license": "MIT",
-  "repository": "Hebilicious/nuxt-module-template",
-  "exports": {
-    ".": {
-      "require": {
-        "types": "./dist/module.d.cts",
-        "default": "./dist/module.cjs"
-      },
-      "import": {
-        "types": "./dist/module.d.mts",
-        "default": "./dist/module.mjs"
-      },
-      "types": "./dist/module.d.ts",
-      "default": "./dist/module.mjs"
-    }
-  },
-  "main": "./dist/module.cjs",
-  "module": "./dist/module.mjs",
-  "types": "./dist/types.d.ts",
-  "files": [
-    "dist",
-    "*.d.ts",
-    "*.cjs",
-    "*.mjs"
-  ],
-  "scripts": {
-    "readme": "bun scripts/readme.ts",
-    "prebuild": "bun postinstall",
-    "postinstall": "nuxi prepare",
-    "postbuild": "bun readme",
-    "build:stub": "nuxt-build-module --stub",
-    "build:module": "nuxt-build-module",
-    "build": "rimraf dist && bun build:module",
-    "dev": "nuxi dev"
-  },
-  "peerDependencies": {
-    "nuxt": "^3.11.2",
-    "vite": "*"
-  },
-  "dependencies": {
-    "@nuxt/kit": "3.11.2",
-    "defu": "^6.1.4"
-  },
-  "devDependencies": {
-    "@nuxt/module-builder": "^0.5.5",
-    "h3": "^1.11.1",
-    "nuxt": "^3.11.2"
-  }
+	"name": "@hebilicious/nuxt-module-template",
+	"type": "module",
+	"version": "0.0.0",
+	"author": {
+		"name": "Hebilicious",
+		"email": "xsh4k3@gmail.com",
+		"url": "https://twitter.com/its_hebilicious"
+	},
+	"license": "MIT",
+	"repository": "Hebilicious/nuxt-module-template",
+	"exports": {
+		".": {
+			"require": {
+				"types": "./dist/module.d.cts",
+				"default": "./dist/module.cjs"
+			},
+			"import": {
+				"types": "./dist/module.d.mts",
+				"default": "./dist/module.mjs"
+			},
+			"types": "./dist/module.d.ts",
+			"default": "./dist/module.mjs"
+		}
+	},
+	"main": "./dist/module.cjs",
+	"module": "./dist/module.mjs",
+	"types": "./dist/types.d.ts",
+	"files": ["dist", "*.d.ts", "*.cjs", "*.mjs"],
+	"scripts": {
+		"readme": "bun scripts/readme.ts",
+		"prebuild": "bun postinstall",
+		"postinstall": "nuxi prepare",
+		"postbuild": "bun readme",
+		"build:stub": "nuxt-build-module --stub",
+		"build:module": "nuxt-build-module",
+		"build": "rimraf dist && bun build:module",
+		"dev": "nuxi dev"
+	},
+	"peerDependencies": {
+		"nuxt": "^3.14",
+		"vite": "*"
+	},
+	"dependencies": {
+		"@nuxt/kit": "^3.14.1592",
+		"defu": "^6.1.4"
+	},
+	"devDependencies": {
+		"@nuxt/module-builder": "^0.8.4",
+		"h3": "^1.13.0",
+		"nuxt": "^3.14.1592",
+		"unbuild": "^2.0.0"
+	}
 }
