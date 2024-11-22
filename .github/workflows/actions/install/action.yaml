@@ -1,9 +1,8 @@
 name: Install Bun & PNPM
 inputs:
   install:
-    description: Choose the app to install
+    description: Choose a specific package to install
     required: false
-    default: "@hebilicious/nuxt-module-template"
   node-version:
     required: false
     default: 22.9.0
@@ -34,6 +33,5 @@ runs:
         cache: pnpm
 
     - name: Install dependencies
-      if: ${{ inputs.install }}
-      run: pnpm install --filter ${{ inputs.install }}
+      run: pnpm install ${{ inputs.install && format('--filter {0}', inputs.install) || '' }}
       shell: bash

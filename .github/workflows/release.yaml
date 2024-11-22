@@ -18,7 +18,9 @@ jobs:
           fetch-depth: 0
 
       - uses: ./.github/workflows/actions/install
-  
+        with:
+          install: nuxt-module-template
+          
       - run: bun x changelogithub
         continue-on-error: false
         env:
