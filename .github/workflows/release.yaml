@@ -17,17 +17,14 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: oven-sh/setup-bun@v1
+      - uses: ./.github/workflows/actions/install
         with:
-          bun-version: latest
-
+          install: nuxt-module-template
+          
       - run: bun x changelogithub
         continue-on-error: false
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
-      - name: Install
-        run: bun install
 
       - name: Build
         run: bun run build

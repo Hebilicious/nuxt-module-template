@@ -1,3 +1,3 @@
 export default defineNuxtConfig({
-  modules: ["@hebilicious/nuxt-module-template"]
+	modules: ["@hebilicious/nuxt-module-template"]
 })

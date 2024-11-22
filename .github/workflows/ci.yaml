@@ -15,15 +15,12 @@ jobs:
     steps:
       - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
 
-      - uses: oven-sh/setup-bun@v1
+      - uses: ./.github/workflows/actions/install
         with:
-          bun-version: latest
-
-      - name: Install
-        run: bun install
-
-      - name: Lint
-        run: bun run lint
+          install: nuxt-module-template
+          
+      - name: Format
+        run: bun run format
 
   test:
     runs-on: ubuntu-latest
@@ -31,12 +28,7 @@ jobs:
     steps:
       - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
 
-      - uses: oven-sh/setup-bun@v1
-        with:
-          bun-version: latest
-
-      - name: Install
-        run: bun install
+      - uses: ./.github/workflows/actions/install
 
       - name: Build
         run: bun run build

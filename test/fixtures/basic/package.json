@@ -1,7 +1,7 @@
 {
-  "name": "basic-fixture",
-  "private": true,
-  "dependencies": {
-    "nuxt": "3.7.0"
-  }
+	"name": "basic-fixture",
+	"private": true,
+	"dependencies": {
+		"nuxt": "^3.14.1592"
+	}
 }

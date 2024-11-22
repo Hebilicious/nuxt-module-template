@@ -1,0 +1,25 @@
+{
+	"markdown": {},
+	"biome": {
+		"lineWidth": 100,
+		"semicolons": "asNeeded",
+		"trailingCommas": "none"
+	},
+	"malva": {},
+	"markup": {
+		"quotes": "double",
+		"closingBracketSameLine": true,
+		"vBindStyle": "short",
+		"vOnStyle": "short",
+		"vForDelimiterStyle": "of",
+		"vSlotStyle": "short",
+		"vBindSameNameShortHand": true
+	},
+	"excludes": ["**/node_modules", "**/.nuxt"],
+	"plugins": [
+		"https://plugins.dprint.dev/markdown-0.17.8.wasm",
+		"https://plugins.dprint.dev/biome-0.6.0.wasm",
+		"https://plugins.dprint.dev/g-plane/malva-v0.10.1.wasm",
+		"https://plugins.dprint.dev/g-plane/markup_fmt-v0.13.1.wasm"
+	]
+}

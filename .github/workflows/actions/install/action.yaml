@@ -1,0 +1,37 @@
+name: Install Bun & PNPM
+inputs:
+  install:
+    description: Choose a specific package to install
+    required: false
+  node-version:
+    required: false
+    default: 22.9.0
+  bun-version:
+    required: false
+    default: 1.1.34
+  pnpm-version:
+    required: false
+    default: 9.14.2
+
+runs:
+  using: composite
+  steps:
+    - name: Use Bun ${{ inputs.bun-version }} 
+      uses: oven-sh/setup-bun@v1
+      with:
+        bun-version: ${{ inputs.bun-version }} 
+
+    - name: Use Pnpm ${{ inputs.pnpm-version }} 
+      uses: pnpm/action-setup@v3
+      with:
+        version: ${{ inputs.pnpm-version }} 
+
+    - name: Use Node.js ${{ inputs.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ inputs.node-version }}
+        cache: pnpm
+
+    - name: Install dependencies
+      run: pnpm install ${{ inputs.install && format('--filter {0}', inputs.install) || '' }}
+      shell: bash
