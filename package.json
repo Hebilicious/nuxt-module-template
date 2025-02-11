@@ -21,7 +21,7 @@
 		"@biomejs/biome": "^1.9.4",
 		"@nuxt/test-utils": "^3.14.4",
 		"@types/node": "^22.9.1",
-		"bumpp": "^9.8.1",
+		"bumpp": "^10.0.3",
 		"conventional-changelog-cli": "^5.0.0",
 		"dprint": "^0.47.5",
 		"lint-staged": "^15.2.10",
