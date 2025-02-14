@@ -38,17 +38,17 @@
 		"dev": "nuxi dev"
 	},
 	"peerDependencies": {
-		"nuxt": "^3.14.1592",
+		"nuxt": "^3.15.4",
 		"vite": "*"
 	},
 	"dependencies": {
-		"@nuxt/kit": "^3.14.1592",
+		"@nuxt/kit": "^3.15.4",
 		"defu": "^6.1.4"
 	},
 	"devDependencies": {
 		"@nuxt/module-builder": "^0.8.4",
-		"h3": "^1.13.0",
-		"nuxt": "^3.14.1592",
+		"h3": "^1.15.0",
+		"nuxt": "^3.15.4",
 		"unbuild": "^2.0.0"
 	}
 }
