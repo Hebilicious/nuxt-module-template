@@ -9,6 +9,6 @@
 	},
 	"devDependencies": {
 		"@nuxt/devtools": "^2.2.1",
-		"nuxt": "^3.14.1592"
+		"nuxt": "^4.1.2"
 	}
 }
