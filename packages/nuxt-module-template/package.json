@@ -38,7 +38,7 @@
 		"dev": "nuxi dev"
 	},
 	"peerDependencies": {
-		"nuxt": "^3.14.1592",
+		"nuxt": "^4.1.2",
 		"vite": "*"
 	},
 	"dependencies": {
@@ -48,7 +48,7 @@
 	"devDependencies": {
 		"@nuxt/module-builder": "^0.8.4",
 		"h3": "^1.13.0",
-		"nuxt": "^3.14.1592",
+		"nuxt": "^4.1.2",
 		"unbuild": "^3.5.0"
 	}
 }
