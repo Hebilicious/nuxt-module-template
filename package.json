@@ -19,7 +19,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.0.4",
-		"@nuxt/test-utils": "^3.14.4",
+		"@nuxt/test-utils": "^4.0.0",
 		"@types/node": "^24.9.2",
 		"bumpp": "^10.0.3",
 		"conventional-changelog-cli": "^5.0.0",
