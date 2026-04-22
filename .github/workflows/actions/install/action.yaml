@@ -22,7 +22,7 @@ runs:
         bun-version: ${{ inputs.bun-version }} 
 
     - name: Use Pnpm ${{ inputs.pnpm-version }} 
-      uses: pnpm/action-setup@v3
+      uses: pnpm/action-setup@v6
       with:
         version: ${{ inputs.pnpm-version }} 
 
